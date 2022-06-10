@@ -4,13 +4,14 @@
 
 .team__list {
     display: flex;
-    margin-right: -30px;
+    // gap: 30px;
+    margin: $typical-list-margin;
+    @extend %list;
 }
 
 .team__item {
-    width: 270px;
-    width: calc(( 100% - 90px) / 4);
-    margin-right: 30px;
+    flex-basis: calc( 100% / 4 - $typical-item-margin);
+    margin-right: $typical-item-margin;
     background-color: $white-color;
 }
 

@@ -1,6 +1,7 @@
 .features__list {
     display: flex;
-    margin-right: -30px;
+    margin: $typical-list-margin;
+    @extend %list;
 }
 
 .features__title {
@@ -13,8 +14,8 @@
 }
 
 .features__item {
-    width: calc((100% - 30px) / 4);
-    margin-right: 30px;
+    flex-basis: calc(100% / 4 - $typical-item-margin);
+    margin-right: $typical-item-margin;
 }
 
 .features__text {
@@ -23,12 +24,10 @@
 }
 
 .features__icon {
-    display: flex;
+    @extend %centeredFlex;
     width: 270px;
     height: 120px;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(245, 244, 250, 1);
     border-radius: 4px;
-    margin-bottom: 30px;
+    margin-bottom: $typical-item-margin;
 }

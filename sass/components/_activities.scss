@@ -1,17 +1,19 @@
 .section.activities {
     padding-top: 0px;
+    
 }
 
 .activities__list {
     display: flex;
-    margin-right: -30px;
+    // gap: 30px;
+    margin: $typical-list-margin;
+    @extend %list;
 }
 
 .activities__item {
     position: relative;
-    // width: 370px;
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
+    flex-basis: calc(100% / 3 - $typical-item-margin);
+    margin-right: $typical-item-margin;
 }
 
 .activities__label {

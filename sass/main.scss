@@ -1,4 +1,6 @@
 @import './utils/variables';
+@import './utils/placeholders';
+@import './utils/common-styles';
 @import './components/logo';
 @import './components/page-header';
 @import './components/hero';
@@ -6,7 +8,6 @@
 @import './components/features';
 @import './utils/visually-hidden';
 @import './components/activities';
-@import './components/section-title';
 @import './components/team';
 @import './components/socials';
 @import './components/clients';
@@ -14,43 +15,3 @@
 @import './components/modal-window';
 @import './components/portfolio';
 
-
-body {
-    background-color: $white-color;
-        color: $primery-text-color;
-        font-family: $primery-font-family;
-        letter-spacing: 0.03em;
-}
-
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    outline: 2px solid tomato;
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
